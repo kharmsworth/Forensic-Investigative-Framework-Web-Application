@@ -117,3 +117,11 @@
 		opacity:1;
 	}
 }
+
+.background{																							/*universal background across all webpages*/
+	height: 100vh;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+}
