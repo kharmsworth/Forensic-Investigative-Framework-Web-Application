@@ -1,7 +1,7 @@
 /* Kayleigh Harmsworth 2025 */
 /* COMP1682 Final Year Projects */
 /* Purpose: Stylesheet for the Web Application */
-/* Source code taken from 'Learn Web' on youtube: https://www.youtube.com/watch?v=NHz5xc0AL6E */
+/* Source code taken from 'Learn Web' on youtube: https://www.youtube.com/watch?v=NHz5xc0AL6E, W3 schools: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp, Fajar Std: https://codepen.io/fajarnurwahid/pen/ZEJXBYm */
 
 *{
 	margin:0px;
@@ -47,6 +47,308 @@
 
 .navbar-links a:hover{
 	color:#DC143C;
+}
+
+/*The Sidebar Section*/
+.sidebar {
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	overflow-x: hidden;       /*Disables the ability to horizontally scroll*/
+	padding-top: 80px;
+}
+
+.sidebar h3 {
+	color: #fff;
+}
+.sidebar a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25;
+	color: #DC143C;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #B22222;
+}
+
+.next-button{
+	padding: 12px 25px;
+	font-size: 18px;
+	color:#black;
+	background-color: #DC143C;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s ease;
+	animation: fadeIn 2.5s ease-in-out;
+}
+
+.next-button:hover{
+	background-color: #B22222;
+}
+
+
+/*Design for the Checklist Page*/
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+form {
+	padding: 24px;
+	padding-top: 100px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+	background: #6a1414;
+	color: #fff;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	cursor: pointer;
+}
+
+label .checkbox {
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	border-radius: 4px;
+	position: relative;
+	transition: .2s ease;
+	transition-delay: .2s;
+}
+
+label .checkbox::before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	background: #fff;
+	border-radius: 2.5px;
+	transition: .2s ease;
+	transition-delay: .2s;
+}
+
+label .checkbox .check {
+	display: block;
+	width: 12px;
+	height: 6px;
+	position: absolute;
+	top: 6px;
+	left: 50%;
+	transform: translateX(-50%) rotateZ(-45deg);
+}
+
+label .checkbox .check::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background: #fff;
+	transition: .2s ease;
+	transition-delay: .2s;
+}
+
+label .checkbox .check::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: .2s ease;
+	transition-delay: 0s;
+}
+
+/*Design Specific to the Preperation Checklist*/
+.prep-group {
+	margin-bottom: 16px;
+}
+
+.prep-group:last-child {
+	margin-bottom: 0;
+}
+
+.prep-group input {
+	display: none;
+}
+
+.prep-group.prep-all label {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.prep-group input:checked + label .checkbox::before {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	transition-delay: 0s;
+}
+
+.prep-group input:checked + label .checkbox {
+	background: var(--dark);
+	transition-delay: 0s;
+}
+
+.prep-group input:checked + label .checkbox .check::before {
+	height: 100%;
+	transition-delay: .2s;
+}
+
+.prep-group input:checked + label .checkbox .check::after {
+	width: 100%;
+	transition-delay: .4s;
+}
+
+/*Design Specific to the Collection & Examination Checklist*/
+.exam-group {
+	margin-bottom: 16px;
+}
+
+.exam-group:last-child {
+	margin-bottom: 0;
+}
+
+.exam-group input {
+	display: none;
+}
+
+.exam-group.exam-all label {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.exam-group input:checked + label .checkbox::before {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	transition-delay: 0s;
+}
+
+.exam-group input:checked + label .checkbox {
+	background: var(--dark);
+	transition-delay: 0s;
+}
+
+.exam-group input:checked + label .checkbox .check::before {
+	height: 100%;
+	transition-delay: .2s;
+}
+
+.exam-group input:checked + label .checkbox .check::after {
+	width: 100%;
+	transition-delay: .4s;
+}
+
+/*Design Specific for the Analysis Checklist*/
+.analysis-group {
+	margin-bottom: 16px;
+}
+
+.analysis-group:last-child {
+	margin-bottom: 0;
+}
+
+.analysis-group input {
+	display: none;
+}
+
+.analysis-group.analysis-all label {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.analysis-group input:checked + label .checkbox::before {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	transition-delay: 0s;
+}
+
+.analysis-group input:checked + label .checkbox {
+	background: var(--dark);
+	transition-delay: 0s;
+}
+
+.analysis-group input:checked + label .checkbox .check::before {
+	height: 100%;
+	transition-delay: .2s;
+}
+
+.analysis-group input:checked + label .checkbox .check::after {
+	width: 100%;
+	transition-delay: .4s;
+}
+
+/*Design Specific to the Reporting Checklist*/
+.rep-group {
+	margin-bottom: 16px;
+}
+
+.rep-group:last-child {
+	margin-bottom: 0;
+}
+
+.rep-group input {
+	display: none;
+}
+
+.rep-group.rep-all label {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.rep-group input:checked + label .checkbox::before {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	transition-delay: 0s;
+}
+
+.rep-group input:checked + label .checkbox {
+	background: var(--dark);
+	transition-delay: 0s;
+}
+
+.rep-group input:checked + label .checkbox .check::before {
+	height: 100%;
+	transition-delay: .2s;
+}
+
+.rep-group input:checked + label .checkbox .check::after {
+	width: 100%;
+	transition-delay: .4s;
 }
 
 /*The Hero Section*/
@@ -100,6 +402,82 @@
 	background-color: #B22222;
 }
 
+/*Legal Webpage Layout*/
+.header{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/bg.jpg');
+	color: #B22222;
+	font-size: 40px;
+	padding: 70px;
+	text-align: center;
+}
+
+.header h1{
+	animation: slideIn 1.5s ease-in-out;
+}
+
+.column{
+	background-color: #CCBC80;
+	background-size: cover;
+	float: left;
+	height: 100vh;
+	width: 50%;
+	padding: 100px;
+}
+
+.column h2{
+	font-size: 30px;
+	color: #DC143C;
+	text-align: center;
+	animation: slideIn 1.5s ease-in-out;
+}
+
+.column p{
+	font-size:15px;
+	text-align: justify;
+	animation: slideIn 2s ease-in-out;
+}
+
+.column dl{
+	font-size:15px;
+	text-align: left;
+	padding: 25px;
+	animation: slideIn 2.5s ease-in-out;
+}
+
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Phase Webpage Layout*/
+.main {
+	margin-left: 160px;
+	padding: 0px 0px;
+	background-color: #CCBC80;
+	background-size: cover;
+	height: 100vh;
+}
+
+/*Footer content design*/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin-left: 160px;
+	background-color: #000;
+}
+
+.footer h3 {
+	color: #DC143C;
+	text-align: center;
+}
+
+.footer p {
+	color: white;
+	text-align: justify;
+}
+
 /*Animations*/
 @keyframes fadeIn {
 	from {
@@ -121,58 +499,9 @@
 	}
 }
 
-/*Webpage Layout*/
-.header{
-	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/bg.jpg');
-	color: #B22222;
-	font-size: 40px;
-	padding: 100px;
-	text-align: center;
-}
-
-.header h1{
-	animation: slideIn 1.5s ease-in-out;
-}
-
-.column{
-	background-color: #CCBC80;
-	float: left;
-	height: 100vh;
-	width: 50%;
-	padding: 100px;
-}
-
-.column h2{
-	font-size: 40px;
-	color: #DC143C;
-	text-align: center;
-	animation: slideIn 1.5s ease-in-out;
-}
-
-.column p{
-	font-size:20px;
-	text-align: justify;
-	animation: slideIn 2s ease-in-out;
-}
-
-.column dl{
-	font-size:20px;
-	text-align: left;
-	padding: 25px;
-	animation: slideIn 2.5s ease-in-out;
-}
-
-.row::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
 /*Enables the webpage to format to any screen*/
 @media screen and (max-width: 600px){
 	.column{
 		width: 100%;
 	}
 }
-
-
