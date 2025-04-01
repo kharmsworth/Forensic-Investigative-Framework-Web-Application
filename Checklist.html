@@ -1,6 +1,7 @@
 <!-- Kayleigh Harmsworth 2025 -->
 <!-- COMP1682 Final Year Projects -->
 <!-- Purpose: Checklist Page for the Web Application -->
+<!-- Source code taken from Fajar Std: https://codepen.io/fajarnurwahid/pen/ZEJXBYm -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,15 +23,326 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="legal.html">Legal</a></li>
 			<li><a href="Checklist.html">Checklist</a></li>
-			<li><a href="Phase 1.html">Collection</a></li>
-			<li><a href="Phase 2.html">Examination</a></li>
+			<li><a href="Phase 1.html">Preperation</a></li>
+			<li><a href="Phase 2.html">Collection & Examination</a></li>
 			<li><a href="Phase 3.html">Analysis</a></li>
 			<li><a href="Phase 4.html">Reporting</a></li>
 		</ul>
 	</nav>
 
-	<section class="background">
+	<!-- The Preperation Phase Checklist -->
+	<form>
+		<!-- The preperation checklist -->
+		<div class="prep-group prep-all">
+			<input type="checkbox" id="prep-all">
+			<label for="prep-all">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Preperation
+			</label>
+		</div>
+		<div class="prep-group">
+			<input type="checkbox" id="aware1">
+			<label for="aware1">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Is all the relevant software updated and usable?
+			</label>
+		</div>
+		<div class="prep-group">
+			<input type="checkbox" id="aware2">
+			<label for="aware2">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have the team been briefed on how to use the relevant software and workstations?
+			</label>
+		</div>
+		<div class="prep-group">
+			<input type="checkbox" id="identify">
+			<label for="identify">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you identified whether a crime has taken place or not?
+			</label>
+		</div>
+		<div class="prep-group">
+			<input type="checkbox" id="prep">
+			<label for="prep">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have all the team members been trained on how to use the updated software?
+			</label>
+		</div>
+		<br>
 
-	</section>
+		<!-- The Collection & Examination checklist -->
+		<br>
+		<div class="exam-group exam-all">
+			<input type="checkbox" id="exam-all">
+			<label for="exam-all">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Collection & Examination
+			</label>
+		</div>
+		<div class="exam-group">
+			<input type="checkbox" id="collect">
+			<label for="collect">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you taken different artefacts from some key areas of the device?
+			</label>
+		</div>
+		<div class="exam-group">
+			<input type="checkbox" id="preserve">
+			<label for="preserve">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Has a Chain of Custody been established?
+			</label>
+		</div>
+		<div class="exam-group">
+			<input type="checkbox" id="distribute">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you created and distributed an .E01 file across the team?
+			</label>
+		</div>
+		<br>
+
+		<!-- The Analysis Checklist -->
+		<br>
+		<div class="analysis-group analysis-all">
+			<input type="checkbox" id="analysis-all">
+			<label for="analysis-all">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Analysis
+			</label>
+		</div>
+		<div class="analysis-group">
+			<input type="checkbox" id="preAnalysis">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Has your team individually analysed the .E01 file/s?
+			</label>
+		</div>
+		<div class="analysis-group">
+			<input type="checkbox" id="compare">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you compared the results from the individual analysis'?
+			</label>
+		</div>
+		<div class="analysis-group">
+			<input type="checkbox" id="club">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you created an independent forensic result from the individual analysis'?
+			</label>
+		</div>
+		<div class="analysis-group">
+			<input type="checkbox" id="finalAnalysis">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you briefed the entire team on your independent forensic result?
+			</label>
+		</div>
+		<br>
+
+		<!-- The Reorting Checklist -->
+		<br>
+		<div class="rep-group rep-all">
+			<input type="checkbox" id="rep-all">
+			<label for="rep-all">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Reporting
+			</label>
+		</div>
+		<div class="rep-group">
+			<input type="checkbox" id="res">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you gathered all the evidential data, including those that go against your final analysis?
+			</label>
+		</div>
+		<div class="rep-group">
+			<input type="checkbox" id="improve">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you made a note of all the steps taken to get the evidence and how the process might be improved?
+			</label>
+		</div>
+		<div class="rep-group">
+			<input type="checkbox" id="report">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you provided a documented all the steps taken, all evidence found, and the forensic techniques used to gather the evidence?
+			</label>
+		</div>
+		<div class="rep-group">
+			<input type="checkbox" id="tidy">
+			<label for="distribute">
+				<span class="checkbox">
+					<span class="check"></span>
+				</span>
+				Have you returned all evidence and catalogued it correctly?
+			</label>
+		</div>
+	</form>
+
+	<!-- Javascript Code for the Checklists -->
+	<script>
+		// For the preperation checklist
+		const prepSelectAll = document.querySelector('.prep-group.prep-all input');
+		const prepAllCheckbox = document.querySelectorAll('.prep-group:not(.prep-all) input');
+		let prepListBoolean = [];
+
+		prepAllCheckbox.forEach(item=> {
+			item.addEventListener('change', function () {
+				prepAllCheckbox.forEach(i=> {
+					prepListBoolean.push(i.checked);
+				})
+				if(prepListBoolean.includes(false)) {
+					prepAllCheckbox.checked = false;
+				} else {
+					prepAllCheckbox.checked = true;
+				}
+				prepListBoolean = []
+			})
+		})
+
+		prepSelectAll.addEventListener('change', function () {
+			if(this.checked) {
+				prepAllCheckbox.forEach(i=> {
+					i.checked = true;
+				})
+			} else {
+				prepAllCheckbox.forEach(i=> {
+					i.checked = false;
+				})
+			}
+		})
+
+		// For the collection & examination checklist
+		const examSelectAll = document.querySelector('.exam-group.exam-all input');
+		const examAllCheckbox = document.querySelectorAll('.exam-group:not(.exam-all) input');
+		let examListBoolean = [];
+
+		examAllCheckbox.forEach(item=> {
+			item.addEventListener('change', function () {
+				examAllCheckbox.forEach(i=> {
+					examListBoolean.push(i.checked);
+				})
+				if(examListBoolean.includes(false)) {
+					examAllCheckbox.checked = false;
+				} else {
+					examAllCheckbox.checked = true;
+				}
+				examListBoolean = []
+			})
+		})
+
+		examSelectAll.addEventListener('change', function () {
+			if(this.checked) {
+				examAllCheckbox.forEach(i=> {
+					i.checked = true;
+				})
+			} else {
+				examAllCheckbox.forEach(i=> {
+					i.checked = false;
+				})
+			}
+		})
+
+		// For the analysis checklist
+		const analysisSelectAll = document.querySelector('.analysis-group.analysis-all input');
+		const analysisAllCheckbox = document.querySelectorAll('.analysis-group:not(.analysis-all) input');
+		let analysisListBoolean = [];
+
+		analysisAllCheckbox.forEach(item=> {
+			item.addEventListener('change', function () {
+				analysisAllCheckbox.forEach(i=> {
+					analysisListBoolean.push(i.checked);
+				})
+				if(analysisListBoolean.includes(false)) {
+					analysisAllCheckbox.checked = false;
+				} else {
+					analysisAllCheckbox.checked = true;
+				}
+				analysisListBoolean = []
+			})
+		})
+
+		analysisSelectAll.addEventListener('change', function () {
+			if(this.checked) {
+				analysisAllCheckbox.forEach(i=> {
+					i.checked = true;
+				})
+			} else {
+				analysisAllCheckbox.forEach(i=> {
+					i.checked = false;
+				})
+			}
+		})
+
+		//For the reporting checklist
+		const repSelectAll = document.querySelector('.rep-group.rep-all input');
+		const repAllCheckbox = document.querySelectorAll('.rep-group:not(.rep-all) input');
+		let repListBoolean = [];
+
+		repAllCheckbox.forEach(item=> {
+			item.addEventListener('change', function () {
+				repAllCheckbox.forEach(i=> {
+					repListBoolean.push(i.checked);
+				})
+				if(repListBoolean.includes(false)) {
+					repAllCheckbox.checked = false;
+				} else {
+					repAllCheckbox.checked = true;
+				}
+				repListBoolean = []
+			})
+		})
+
+		repSelectAll.addEventListener('change', function () {
+			if(this.checked) {
+				repAllCheckbox.forEach(i=> {
+					i.checked = true;
+				})
+			} else {
+				repAllCheckbox.forEach(i=> {
+					i.checked = false;
+				})
+			}
+		})
+	</script>
 </body>
 </html>
