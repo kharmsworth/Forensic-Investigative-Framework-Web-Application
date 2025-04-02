@@ -113,6 +113,8 @@ form {
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
 	background: #6a1414;
 	color: #fff;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
 label {
