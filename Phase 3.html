@@ -1,6 +1,6 @@
 <!-- Kayleigh Harmsworth 2025 -->
 <!-- COMP1682 Final Year Projects -->
-<!-- Purpose: Examination Page for the Web Application -->
+<!-- Purpose: Analysis Page for the Web Application -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>UFIP Examination</title>
+	<title>UFIP Analysis</title>
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
  
@@ -22,8 +22,8 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="legal.html">Legal</a></li>
 			<li><a href="Checklist.html">Checklist</a></li>
-			<li><a href="Phase 1.html">Collection</a></li>
-			<li><a href="Phase 2.html">Examination</a></li>
+			<li><a href="Phase 1.html">Preperation</a></li>
+			<li><a href="Phase 2.html">Collection & Examination</a></li>
 			<li><a href="Phase 3.html">Analysis</a></li>
 			<li><a href="Phase 4.html">Reporting</a></li>
 		</ul>
@@ -31,40 +31,43 @@
 
 	<!-- Sidebar navigation -->
 	<div class="sidebar">
-		<h3>Stages Included in the Examination Phase:</h3>
-		<a href="#">Stage 1</a>
-		<a href="#">Stage 2</a>
-		<a href="#">Stage 3</a>
+		<h3>Stages Included in the Analysis Phase:</h3>
+		<a href="#">Pre-Analysis</a>
+		<a href="#">Club and Compare</a>
+		<a href="#">Final Analysis</a>
 		<br>
 		<br>
 		<br>
 		<br>
 		<h3>Resources that are Suggested:</h3>
-		<a href="#">Resource 1</a>
-		<a href="#">Resource 2</a>
-		<a href="#">Resource 2</a>
-		<br>
-		<br>
-		<br>
-		<br>
-		<a href="Phase 3.html" class="next-button">Next Phase</a>
+		<a href="https://www.autopsy.com/download/">Autopsy</a>
+		<a href="https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81">FTKImager</a>
 	</div>
 
 	<!-- Page Content -->
 	<div class="main">
 		<div class="header">
-			<h1>EXAMINATION PHASE</h1>
+			<h1>ANALYSIS</h1>
 		</div>
 
-		<p>INTRO PARAGRAPH</p>
+		<p>The Analysis phase forms the third phase, overall, for the investigation and therefore the framework. Throughout this phase, a team of technicians will be working towards the main goal of drawing out all of the useful information from the evidence distributed in the previous phase. This phase can be broken down into three smaller stages: Pre-analysis, Club and Compare, and Final Analysis.</p>
 		<br>
-		<h3>Anlaysis</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h3>Pre-Analysis:</h3>
+		<p>Pre-analysis is the stage of an investigation where the potential evidence is analysed by the team members individually. This stage benefits from the use of forensic tools such as FTKImager and Autopsy, both of which grant a different perspective of the drives. Whilst these two types of software can be used interchangeably, they both give an insight that the other doesn’t through their differing modules that can be run on the distributed device drives. As suggested through the work of (Dohyun Kim, 2020), this could include hybrid analysis, tracing the hacker, or the formation and analysis of a Chain of Artefacts (CoA) (Athanasios Dimitriadis, 2020).</p>
+		<br>
+		<h3>Club and Compare:</h3>
+		<p>The club and compare stage of an investigation is where we see the team come together again to discuss their findings and compare them against each other to reach a confident and cohesive conclusion for each lead suggested. There may be more than one lead that needs to be proved or otherwise. Once the comparisons have been made and any conclusions have been drawn, these conclusions are ‘clubbed’ together to produce an independent forensic result, which will be referred to in the next stages.</p>
+		<br>
+		<h3>Final Analysis:</h3>
+		<p>The final analysis stage of the investigation is implemented to double-check the evidence linked to the independent forensic result. As well as this, it features the team ensuring that the entirety of the investigative team is aware of the conclusion drawn before initializing the final phase, the ‘Reporting Phase’.</p>
+		<br>
+		<a href="Phase 4.html" class="next-button">Next Phase</a>
+		<a href="Phase 2.html" class="next-button">Previous Phase</a>
 
 		<!-- Footer Content -->
 		<div class="footer">
-			<h3>CASE STUDY AREA</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>CASE STUDY</h3>
+			<p>This stage of the investigation features the use of the Autopsy and FTKImager software in the hopes of uncovering the type of encryption used to encrypt the victim’s files. This can be done through the running of modules over the device to identify any potentially malicious-looking files, including, in this case, the initial link used by the victim that allowed the suspect access to the device, ultimately allowing the encryption to occur. Now that we have the malicious link and the email used to send it, we can backtrack to the sender’s IP address to find the suspect. As well as this, we can analyse the link and its responsive actions to better understand the encryption used and how to, if it is possible, decrypt the victim’s files on their drive.</p>
 		</div>
 	</div>
 
