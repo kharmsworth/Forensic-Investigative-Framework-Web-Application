@@ -459,12 +459,30 @@ label .checkbox .check::after {
 	height: 100vh;
 }
 
+.main h3 {
+	color: #DC143C;
+	font-size: 30px;
+}
+
+.main p {
+	font-size: 20px;
+}
+
+.main-button{
+	padding: 12px 25px;
+	font-size: 18px;
+	color:#fff;
+	background-color: #DC143C;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s ease;
+	animation: fadeIn 2.5s ease-in-out;
+}
+
 /*Footer content design*/
 .footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	margin-left: 160px;
 	background-color: #000;
 }
 
@@ -474,6 +492,8 @@ label .checkbox .check::after {
 }
 
 .footer p {
+	padding: 2px 2px;
+	font-size: 20px;
 	color: white;
 	text-align: justify;
 }
