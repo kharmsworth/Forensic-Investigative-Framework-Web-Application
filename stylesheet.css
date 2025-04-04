@@ -405,6 +405,13 @@ label .checkbox .check::after {
 }
 
 /*Legal Webpage Layout*/
+.legalbd{
+	padding: 0px 0px;
+	background-color: #CCBC80;
+	background-size: cover;
+	height: 100vh;
+}
+
 .header{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/bg.jpg');
 	color: #B22222;
