@@ -1,0 +1,3 @@
+Welcome to the United Forensic Investigation Platform. This document was made to outline the start-up instructions for the use of the web application.
+
+To load the application, double-click the 'index.html' file present in the zip file and follow the instructions on the webpages to progress through the application accordingly.
